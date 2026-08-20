@@ -6,7 +6,7 @@
     <title>The Responsible Leadership AI Retreat — Module Xero</title>
     <meta
       name="description"
-      content="A five-day immersion in Bali for senior leaders building, deploying, and governing AI. Hosted by Module Xero — bringing connection to the heart of leadership."
+      content="A five-day immersion in Goa, India for senior leaders building, deploying, and governing AI — developing the ethical judgment, governance capability, and long-view leadership that safe and responsible AI depends on."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -739,6 +739,33 @@
         }
       }
 
+      /* === Theory of change block (replaces the duplicated stat pull-quotes) === */
+      .gap-theory {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 2.5rem;
+        background: var(--white);
+        border: 1px solid var(--line-gold);
+        position: relative;
+      }
+      .gap-theory::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: var(--terracotta);
+        opacity: 0.85;
+      }
+      .gap-theory__text {
+        font-size: 1.05rem;
+        line-height: 1.75;
+        color: var(--midnight);
+        margin: 0;
+      }
+
       /* =========================================
      PILLARS — Section 05
      ========================================= */
@@ -966,7 +993,7 @@
         font-size: 1.05rem;
         line-height: 1.75;
       }
-      /* === Two-column layout: timeline (left) + Bali (right) === */
+      /* === Two-column layout: timeline (left) + Goa (right) === */
       .programme__layout {
         display: grid;
         grid-template-columns: 1fr;
@@ -988,22 +1015,22 @@
       .programme__main {
         min-width: 0;
       }
-      .programme__bali {
+      .programme__goa {
         position: relative;
       }
       @media (min-width: 1024px) {
-        .programme__bali {
+        .programme__goa {
           position: sticky;
           top: 6rem;
         }
       }
-      .programme__bali .eyebrow {
+      .programme__goa .eyebrow {
         margin-bottom: 1rem;
       }
-      .programme__bali .display-md {
+      .programme__goa .display-md {
         margin-bottom: 1.5rem;
       }
-      .programme__bali-image {
+      .programme__goa-image {
         width: 100%;
         aspect-ratio: 4 / 5;
         object-fit: cover;
@@ -1012,13 +1039,13 @@
         display: block;
         box-shadow: var(--shadow-soft);
       }
-      .programme__bali-body p {
+      .programme__goa-body p {
         font-size: 0.95rem;
         line-height: 1.7;
         color: var(--midnight-soft);
         margin-bottom: 1.1rem;
       }
-      .programme__bali-body p:first-child {
+      .programme__goa-body p:first-child {
         font-family: "Josefin Sans", "Montserrat", sans-serif;
         font-style: italic;
         color: var(--midnight);
@@ -1417,6 +1444,61 @@
       .community__cta-wrap {
         margin-top: 4rem;
         text-align: center;
+      }
+
+      /* =========================================
+     PARTNER WITH US — Section 08C
+     ========================================= */
+      .partner {
+        background: var(--midnight);
+        color: var(--cream);
+      }
+      .partner .eyebrow {
+        color: var(--amber);
+      }
+      .partner__subhead {
+        font-family: "Josefin Sans", "Montserrat", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+        color: rgba(250, 246, 238, 0.85);
+        margin-top: 1.25rem;
+        max-width: 44ch;
+      }
+      .partner__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 3.5rem;
+      }
+      @media (min-width: 900px) {
+        .partner__grid {
+          grid-template-columns: 6fr 5fr;
+          gap: 5rem;
+        }
+      }
+      .partner__body p {
+        font-size: 1rem;
+        line-height: 1.75;
+        color: rgba(250, 246, 238, 0.85);
+        margin-bottom: 1.5rem;
+      }
+      .partner__card {
+        background: rgba(250, 246, 238, 0.06);
+        border: 1px solid rgba(217, 176, 122, 0.25);
+        padding: 2.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .partner__card p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: rgba(250, 246, 238, 0.8);
+        margin-bottom: 1.75rem;
+      }
+      .partner__cta {
+        align-self: flex-start;
       }
 
       /* =========================================
@@ -2279,6 +2361,7 @@
           <li><a href="#facilitators" class="nav__link">Facilitators</a></li>
           <li><a href="#report" class="nav__link">Gap Report</a></li>
           <li><a href="#webinars" class="nav__link">Webinars</a></li>
+          <li><a href="#partner" class="nav__link">Partner With Us</a></li>
           <li>
             <a href="https://form.typeform.com/to/I4BGfd2f" class="nav__cta"
               >Apply Now</a
@@ -2312,7 +2395,9 @@
             <p class="hero__sub">
               A five-day immersion in Goa for senior leaders who are building,
               deploying, and governing AI — and who want to do it in a way they
-              can genuinely stand behind.
+              can genuinely stand behind.<br />
+              Building the leadership infrastructure for responsible and safe
+              AI — from India, for the world.
             </p>
             <div class="hero__scarcity">
               <span class="hero__scarcity-dot"></span>
@@ -2355,6 +2440,9 @@
 
     <!-- ============================================
      CREDIBILITY STRIP — Section 02 (MARQUEE)
+     NOTE: AWS logo is not currently in this strip. If a formal
+     partnership with AWS exists, add its logo here — pending
+     Sheena's confirmation (see Priority 1.5).
      ============================================ -->
     <section class="credibility">
       <div class="credibility__inner">
@@ -2421,7 +2509,8 @@
           </div>
         </div>
         <p class="stats__source">
-          MX Responsible Leadership Gap Report, 2026 · N=25 Global Leaders
+          MX Responsible Leadership Gap Report, 2026 · Pilot study, N=25
+          senior leaders · Expanded study in progress
         </p>
       </div>
     </section>
@@ -2453,7 +2542,7 @@
               act on any of that.
             </p>
             <p>
-              Our research with 25 global leaders across AI, consulting,
+              Our 2026 pilot study with 25 senior leaders across AI, consulting,
               academia, and social impact found that the gap almost everyone
               feels is surprisingly consistent. Leaders across every sector hold
               strong ethical values. What they lack are the structures, the
@@ -2465,38 +2554,62 @@
               The Responsible Leadership Retreat exists to help close that gap.
             </p>
           </div>
-          <div class="quote-cards">
-            <div class="quote-card reveal">
-              <div class="quote-card__watermark">70%</div>
-              <p class="quote-card__text">
-                "of leaders in our study say that speed pressure is their single
-                biggest obstacle to responsible decision-making. The issue is
-                rarely about intention. It is time, structure, and the
-                conditions that either support or erode good judgment."
-              </p>
-              <p class="quote-card__source">MX Gap Report, 2026</p>
-            </div>
-            <div class="quote-card reveal">
-              <div class="quote-card__watermark">52%</div>
-              <p class="quote-card__text">
-                "rely on inner clarity as their primary compass in high-pressure
-                moments. That same group reports that emotional overload,
-                competing priorities, and organisational noise are making that
-                clarity progressively harder to access."
-              </p>
-              <p class="quote-card__source">MX Gap Report, 2026</p>
-            </div>
-            <div class="quote-card reveal">
-              <div class="quote-card__watermark">100%</div>
-              <p class="quote-card__text">
-                "leaders in our study connect their ethical values to long-term
-                trust. Every single one. The gap lies between what leaders
-                believe in private and what the organisations they lead make
-                possible in practice."
-              </p>
-              <p class="quote-card__source">MX Gap Report, 2026</p>
-            </div>
+          <div class="gap-theory reveal">
+            <p class="gap-theory__text">
+              The stakes are not abstract. Decisions about AI systems that will
+              affect more than a billion people are being made every day by
+              leaders who have strong values but no structural support for
+              acting on them — no time, no shared language, no peer community,
+              no practice. This retreat, and the community it anchors, exists to
+              build that missing infrastructure: the ethical decision-making
+              capacity, governance fluency, and long-view judgment that
+              responsible AI development depends on.
+            </p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+     THE INDIA OPPORTUNITY — Section 04B
+     ============================================ -->
+    <section class="section gap-section" style="background: var(--cream-deep)">
+      <div class="container">
+        <p class="eyebrow reveal">Why This Work, Here</p>
+        <h2
+          class="display-lg reveal"
+          style="margin-top: 1.25rem; max-width: 22ch"
+        >
+          Why <em>India</em>
+        </h2>
+        <div class="gap-section__intro reveal" style="max-width: 78ch; margin-top: 2.5rem">
+          <p>
+            India is where the future of AI will be decided at population
+            scale. It holds the world's second-largest AI talent pool and one
+            of its fastest-growing developer bases. The products designed and
+            governed by Indian technology leaders are deployed across the
+            Global South — which means the judgment of a single senior leader
+            here compounds across hundreds of millions of users.
+          </p>
+          <p>
+            India is also where AI meets population-scale public systems
+            first. Identity, payments, health, and welfare infrastructure
+            serving over a billion people is being rebuilt with AI in the
+            loop. The decisions being made upstream today — in product scope,
+            in data practices, in what gets optimised — will shape outcomes
+            for more people than in any other single market.
+          </p>
+          <p>
+            And yet the responsible AI infrastructure has not kept pace. The
+            United States and Europe have a dense ecosystem of AI safety
+            institutes, governance fellowships, and leadership programmes.
+            India has world-class builders and almost none of that support
+            structure. This is a high-importance, highly neglected gap — and a
+            tractable one. Building the ethical leadership capacity of the
+            people already making these decisions is among the
+            highest-leverage investments available in responsible and safe AI
+            today.
+          </p>
         </div>
       </div>
     </section>
@@ -2614,10 +2727,11 @@
               </p>
               <p>
                 This pillar uses Design Thinking and Systems Thinking frameworks
-                alongside established AI Governance frameworks to help you get
-                present in the decisions that actually shape outcomes. You will
-                work with real use cases from your own organisation, in small
-                groups with practitioners who have done this work at scale.
+                alongside established AI governance and safety frameworks to
+                help you get present in the decisions that actually shape
+                outcomes. You will work with real use cases from your own
+                organisation, in small groups with practitioners who have done
+                this work at scale.
               </p>
             </div>
             <div class="pillar__outcome">
@@ -2635,8 +2749,8 @@
                   decisions in the rooms where they are made
                 </li>
                 <li>
-                  Practical tools to operationalise responsible AI without
-                  slowing the pace of your work
+                  Practical tools to operationalise responsible and safe AI
+                  without slowing the pace of your work
                 </li>
               </ul>
             </div>
@@ -2663,7 +2777,8 @@
                 its product decisions, its incentive structures, and the
                 assumptions embedded in how it measures success. This pillar
                 uses Futures Scoping methodology to help you see that future
-                clearly, map its consequences, and develop the strategic
+                clearly, map its consequences — for people, for society, and
+                for long-term sustainability — and develop the strategic
                 language and personal authority to shape it with intention.
               </p>
               <p>
@@ -2728,7 +2843,10 @@
                 This is not a score or a ranking. It is a clear-eyed picture of
                 where genuine readiness exists, where the gaps are, and where
                 the highest-leverage opportunities for change sit in your
-                specific context.
+                specific context. The report also anchors how we measure
+                impact — a structured baseline before the retreat, an
+                individual assessment at its close, and three months of
+                tracked integration after it.
               </p>
             </div>
           </div>
@@ -2803,9 +2921,9 @@
                   You arrive in Goa and the work begins gently. Opening
                   ceremony, cohort introductions, and a shared first
                   conversation about what each person is carrying into the week.
-                  A dinner in the rice terraces as the sun goes down — the first
-                  evening of what most participants describe as a week that felt
-                  different from the first night.
+                  A slow dinner overlooking the paddy fields as the sun goes
+                  down — the first evening of what most participants describe
+                  as a week that felt different from the first night.
                 </p>
               </div>
 
@@ -2872,8 +2990,8 @@
             </div>
           </div>
 
-          <!-- RIGHT: Why Bali -->
-          <aside class="programme__bali reveal">
+          <!-- RIGHT: Why Goa -->
+          <aside class="programme__goa reveal">
             <p class="eyebrow">The Place</p>
             <h3 class="display-md">
               Why Goa <b/>
@@ -2881,10 +2999,10 @@
             </h3>
             <img
               src="goa.jpg"
-              alt="Bali Retreat"
-              class="programme__bali-image"
+              alt="Goa retreat setting — coastline and green interior, India"
+              class="programme__goa-image"
             />
-            <div class="programme__bali-body">
+            <div class="programme__goa-body">
               <p>
                 A sanctuary of stillness and wildness, nestled in the country that gave the world its oldest leadership tradition.
               </p>
@@ -2892,10 +3010,22 @@
                Goa sits within India, a land that has held the wisdom of inner life for thousands of years, through traditions like Yoga, Ayurveda, and contemplative practice. There is something in arriving here that already begins the work before the first session starts.
               </p>
               <p>
-               Goa is strategically placed. Situated between Mumbai, India's financial capital, and Bengaluru, its technology hub, it draws together exactly the ecosystems this work is in conversation with. The region is rapidly becoming a destination for wellness, nature-led retreats, and creative leadership, with a growing community of innovators and conscious startups calling it home.
+                Goa is also a deliberate strategic choice. It sits between
+                Mumbai, India's financial capital, and Bengaluru, its
+                technology hub — drawing together exactly the ecosystems this
+                work is in conversation with. Manohar International Airport
+                (MOPA) connects Goa directly to India's major metros and
+                international routes, and the region has mature retreat and
+                hospitality infrastructure alongside a fast-growing community
+                of founders, senior operators, and conscious-technology
+                builders who now call it home.
               </p>
               <p>
-               The coastline, the lush green interior, the untamed quality of the landscape offer rawness, beauty, and space to think differently. For leaders who spend their days in structured environments, this wildness opens something up. The mornings carry a stillness that makes reflection feel natural. The evenings, with the warmth of the coast and the richness of local culture, carry a perspective-expanding quality that no conference room can manufacture. MOPA International Airport connects Goa directly to several South Asian cities. The timing of this retreat coincides with really relevant leadership festivals in the region, making it a natural gathering point for the community we are building. We chose Goa because the work of responsible leadership asks you to slow down, to feel what you are building, and to reconnect with why it matters. Goa creates the conditions for exactly that: a pause that is also a becoming.
+                We chose Goa because responsible leadership asks you to slow
+                down, feel what you are building, and reconnect with why it
+                matters. Goa creates the conditions for exactly that: close
+                enough to the centres of decision-making to draw the right
+                room, and far enough from them for the room to actually think.
               </p>
             </div>
           </aside>
@@ -3038,7 +3168,7 @@
             <div class="facilitator__content">
               <h3 class="facilitator__name">David Bergendahl</h3>
               <p class="facilitator__role">
-                AWS · Senior Generative AI Strategist
+                Ex-AWS Ex-Crayon · Senior Generative AI Strategist
               </p>
               <div class="facilitator__tags">
                 <span class="facilitator__tag">Generative AI</span>
@@ -3182,14 +3312,6 @@
               <span class="glance__label">Cohort</span>
               <span class="glance__value">20 leaders</span>
             </div>
-            <div class="glance__row">
-              <span class="glance__label">Investment</span>
-              <span class="glance__value"
-                >USD 7,000<br /><span
-                  style="font-size: 0.75em; color: rgba(250, 246, 238, 0.6)"
-                  >all-inclusive</span
-                ></span
-              >
             </div>
             <div class="glance__row">
               <span class="glance__label">Applications</span>
@@ -3239,7 +3361,7 @@
           class="display-lg reveal"
           style="margin-top: 1.25rem; max-width: 24ch"
         >
-          The Largest Community of Responsible AI Leaders <em>Across Asia</em>
+          Building Asia's Leading Community <em>of Responsible AI Leaders</em>
         </h2>
         <div class="community__lead reveal">
           <p>The retreat cohort is the beginning.</p>
@@ -3248,7 +3370,8 @@
             Asia who are doing this work seriously — not as a brand position,
             but as a genuine practice. Leaders who are carrying the same
             questions, navigating the same pressures, and building the same
-            commitment to leading responsibly in the AI era.
+            commitment to AI safety, tech for good, and leading responsibly in
+            the AI era.
           </p>
           <p>
             This community is being built with intention. It is research-backed,
@@ -3258,9 +3381,11 @@
             the institutional headwinds are strongest.
           </p>
           <p>
-            We are building the largest community of responsible AI leaders
-            across Asia. If you believe that how we lead AI matters as much as
-            what we build with it, this is where that conversation is happening.
+            We are building Asia's leading community of senior leaders
+            committed to responsible and safe AI — research-backed,
+            action-oriented, and growing with every cohort. If you believe
+            that how we lead AI matters as much as what we build with it,
+            this is where that conversation is happening.
           </p>
         </div>
         <div class="community__pillars">
@@ -3312,6 +3437,73 @@
     </section>
 
     <!-- ============================================
+     PARTNER WITH US — Section 08C (Funder pathway)
+     ============================================ -->
+    <section class="section partner" id="partner">
+      <div class="container">
+        <p class="eyebrow reveal">Partner With Us</p>
+        <h2 class="display-lg reveal" style="margin-top: 1.25rem">
+          Partner <em>With Us</em>
+        </h2>
+        <p class="partner__subhead reveal">
+          Fund the leaders the ecosystem cannot yet pay for
+        </p>
+        <div class="partner__grid">
+          <div class="partner__body reveal">
+            <p>
+              The leaders whose AI decisions carry the highest public stakes —
+              in government, public-interest technology, journalism, and civil
+              society across India and the Global South — are often the least
+              able to fund their own development. Philanthropic and corporate
+              partners close that gap.
+            </p>
+            <p>
+              Partnership can take several forms: sponsoring fellowship seats
+              for public-interest, policy, and nonprofit leaders; underwriting
+              a subsidised cohort; supporting the expansion of the Responsible
+              Leadership Gap research beyond its pilot phase; or co-developing
+              programming in AI safety, governance, and tech-for-good
+              leadership.
+            </p>
+            <p>
+              Every funded seat is measured. Each participant completes a
+              structured baseline assessment before the retreat, receives an
+              individual AI Readiness Report across purpose, people, and
+              product readiness, and is tracked through three months of
+              post-retreat integration — giving partners a clear,
+              evidence-based picture of the change their support created.
+            </p>
+          </div>
+          <div class="partner__card reveal">
+            <p>
+              If you fund work in AI safety, responsible technology, or
+              leadership for sustainable development, we would welcome the
+              conversation.
+            </p>
+            <a
+              href="mailto:info@modulexero.com?subject=Partnership%20enquiry"
+              class="btn btn--outline-gold partner__cta"
+              >Write to info@modulexero.com
+              <svg
+                class="arrow"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M5 12h14M12 5l7 7-7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
      GAP REPORT — Section 09
      ============================================ -->
     <section class="section report" id="report">
@@ -3334,7 +3526,7 @@
               private and what their organisations make possible in practice.
             </p>
             <p>
-              Our pilot study with 25 global leaders across AI, consulting,
+              Our pilot study with 25 senior leaders across AI, consulting,
               academia, and social impact mapped that gap in detail. The
               findings are specific, grounded in real voices, and directly
               relevant to anyone leading in the AI era.
@@ -3783,8 +3975,9 @@
               <div class="faq__answer-inner">
                 Flights to Goa are not included. Full arrival guidance,
                 accommodation details, and logistics are shared with confirmed
-                participants. We coordinate group airport transfers from Ngurah
-                Rai International Airport on both arrival and departure days.
+                participants. We coordinate group airport transfers from
+                Manohar International Airport (MOPA) and Goa International
+                Airport (Dabolim) on both arrival and departure days.
               </div>
             </div>
           </div>
@@ -3927,6 +4120,7 @@
             <a href="#facilitators" class="footer__link">Facilitators</a>
             <a href="#report" class="footer__link">Gap Report</a>
             <a href="#webinars" class="footer__link">Webinars</a>
+            <a href="#partner" class="footer__link">Partner With Us</a>
             <a href="mailto:info@modulexero.com" class="footer__link"
               >info@modulexero.com</a
             >
@@ -4302,3 +4496,4 @@
     </script>
   </body>
 </html>
+F
